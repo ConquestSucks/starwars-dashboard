@@ -1,6 +1,6 @@
 # Swar Ward dashboard
 
-Deployment - [Vercel](starwars-dashboard-omega.vercel.app)
+Deployment - [Vercel](https://starwars-dashboard-omega.vercel.app/)
 
 ## Tech Stack
 
