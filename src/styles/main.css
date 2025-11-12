@@ -1,0 +1,55 @@
+@import '../assets/fonts//fonts.css';
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+
+
+:root {
+  --font-main: "MuseoSansCyrl";
+}
+
+@theme {
+  --color-white: #FAFAFA;
+  --color-black: #121216;
+  --color-gray-400: #C7C7C7;
+  --color-gray-600: #8E8E93;
+  --color-blue-100: #0057DB;
+  --color-orange-70: #F96E1A;
+  --color-green-70: #22AA6A;
+  --color-yellow-70: #F7BC19;
+  --color-blue-70: #4D8AE6;
+  --color-blue-80: #3379E2;
+}
+
+@layer components {
+  .select-container:has(span[aria-expanded="true"]) svg[data-pc-section="dropdownicon"] {
+    @apply rotate-180;
+  }
+}
+
+@layer base {
+  body {
+    min-height: 100vh;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: var(--font-main);
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: var(--color-gray-200);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--color-gray-400);
+  }
+}
